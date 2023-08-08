@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabir's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f71def00f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" calt="image"class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark vanish" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars vanish" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Graphics Designer</p>
+                <h1>I'm <span>Jabir </span> Mahmud <br> From Bangladeh</h1>
+            </div>
+        </div>
+    </div>
+<!-- -----------------about section------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am Jabir Mahmud. I have 
+                        been working with Graphic 
+                        Design for the last 6 years. I am 
+                        also good at programming and I 
+                        have learned few programming 
+                        languages. I always love to do 
+                        tech-related any kind of work.</p>
+
+                        <div class="tab-title">
+                            <p class="tab-link active" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-link" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>Graphics Design</span> <br>Logo and Business Card Design with Adobe Photoshop, Adobe Illustrator</li>
+                                <li><span>Web Development</span> <br>E-commerce,blog,Portfolio web design with HTML, CSS, JAVA SCRIPT</li>
+                                <li><span>programming languages</span> <br>C programming, Python, Java script</li>
+                                <li><span>Office Software</span> <br>Microsoft Word, Microsoft Powerpoint, Microsoft Exel</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="experience">
+                            <ul>
+                                <li><span>2015 - Current</span> <br>Working with Adobe Photoshop</li> 
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="education">
+                            <ul>
+                                <li><span>Higher Secondary School Certificate</span> <br>From Cantonment Public School & college</li>
+                                <li><span>Bachelor of Science </span> <br>In Computer Science & Engineering at Daffodil International University</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- ----------------services section--------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i> 
+                    <h2>Graphics Design</h2>
+                    <p>I'll make 3d and minimal LOGO for your business and your company.I can also create BUSINESS CARD for you.</p>
+                    <a href="https://www.fiverr.com/fahimprodhan1">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>                  
+                    <h2>Web Design</h2>
+                    <p>I will design e-commers website for your business. I can also make blog and protfolio website</p>
+                    <a href="https://github.com/jabir002">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">              
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>LOGO</h3>
+                    <p>Here is a demo of a LOGO that I have designed</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Business Card</h3>
+                    <p>Here is a demo of a business card that I have designed</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- <div class="work">
+                <img src="images/work-3.png" alt="">
+            </div> -->
+        </div>
+        <a href="" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ----------------contact section---------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> jaabirmahmud01@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 01571151277</p>
+                <div class="social-icones">
+                    <a href="https://www.facebook.com/jabirmahmud01/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/jabirmahmud/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message "></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"> </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i> Copyright Jabir. All rights reserved</p>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwCd2hQ4fjV0Nl3TQuZUIM4gleslp2fZ3cKOznhhvn9UfS3hWGr2xdpzWCRa8kkozMv0w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Messge sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
